@@ -1,0 +1,4 @@
+{
+  "API_URL": "https://YOUR_DOMAIN/v1/chat/completions",
+  "API_KEY": "YOUR_API_KEY"
+}
