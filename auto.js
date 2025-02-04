@@ -14,7 +14,7 @@ async function readChatFile() {
     try {
         const content = await fs.readFile(CHAT_FILE, "utf-8");
         const addresses = content.split("\n").filter(line => line.trim() !== "");
-        if (addresses.length === 0) throw new Error("File chat.txt kosong.");
+        if (addresses.length === 0) throw new Error("File text.txt kosong.");
         return addresses;
     } catch (error) {
         throw new Error(`Gagal membaca file: ${error.message}`);
@@ -50,7 +50,7 @@ async function sendMessage(walletContent) {
 }
 
 (async () => {
-    console.log("Auto Chat By @AirdropsHuntersID \n\n");
+    console.log("Auto By @AirdropsHuntersID \n\n");
     try {
         const addressListArray = await readChatFile();
 
